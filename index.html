@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+
+<body style="background: url(assets/background-9baa10f0.jpg); background-size: cover; font-family: 'Source Code Pro', monospace;"
+    class="min-h-screen">
+    <div class="bg-black bg-opacity-40 min-h-screen">
+        <div class="grid grid-cols-2">
+            <div class="col-span-2 lg:col-span-1 mt-8">
+                <div class="w-4/5 my-auto mx-auto bg-white bg-opacity-90 px-20 py-12 rounded-2xl">
+                    <header class="font-bold text-xl underline underline-offset-8">
+                        Student Application Form
+                    </header>
+                    <div class="mt-4">
+                        <input type="text" name="sname" id="name"
+                            class="mb-4 bg-transparent bg-opacity-90 w-full h-12 border border-x-0 border-t-0 border-b-2 border-stone-400 focus:border-b-4 focus:border-b-stone-700 focus:h-14 focus:border-x-0 focus:outline-none focus:mb-2"
+                            placeholder="Name">
+                    </div>
+                    <div>
+                        <input type="email" name="mail" id="mail"
+                            class="mb-4 bg-transparent bg-opacity-90 w-full h-12 border border-x-0 border-t-0 border-b-2 border-stone-400 focus:border-b-4 focus:border-b-stone-700 focus:h-14 focus:border-x-0 focus:outline-none focus:mb-2"
+                            placeholder="Email">
+                    </div>
+                    <div>
+                        <input type="url" name="site" id="site"
+                            class="mb-4 bg-transparent bg-opacity-90 w-full h-12 border border-x-0 border-t-0 border-b-2 border-stone-400 focus:border-b-4 focus:border-b-stone-700 focus:h-14 focus:border-x-0 focus:outline-none focus:mb-2"
+                            placeholder="Website">
+                    </div>
+                    <div>
+                        <input type="url" name="image" id="image"
+                            class="mb-4 bg-transparent bg-opacity-90 w-full h-12 border border-x-0 border-t-0 border-b-2 border-stone-400 focus:border-b-4 focus:border-b-stone-700 focus:h-14 focus:border-x-0 focus:outline-none focus:mb-2"
+                            placeholder="Image Link">
+                    </div>
+                    <div class="flex flex-col align-middle mt-4">
+                        <label for="gender" class="mb-2">Gender</label>
+                        <span><input type="radio" name="male" id="gender" value="Male"><span
+                                class="mx-4">Male</span></span>
+                        <span><input type="radio" name="male" id="gender" value="Female"><span
+                                class="mx-4">Female</span></span>
+                    </div>
+                    <div class="flex flex-col align-middle mt-4">
+                        <label for="skills" class="mb-2">Skills</label>
+                        <span><input type="checkbox" name="java" id="skills" value="java"><span
+                                class="mx-4">Java</span></span>
+                        <span><input type="checkbox" name="html" id="skills" value="html"><span
+                                class="mx-4">HTML</span></span>
+                        <span><input type="checkbox" name="css" id="skills" value="css"><span
+                                class="mx-4">CSS</span></span>
+                    </div>
+
+                    <div class="my-4 flex">
+                        <button id="enroll"
+                            class="bg-green-400 rounded-full px-8 py-4 hover:font-semibold hover:outline hover:outline-green-700 hover:shadow-md hover:text-lg mr-12 w-1/2">Enroll
+                            Student</button>
+                        <button id="clear"
+                            class="bg-red-400 rounded-full px-8 py-4 hover:font-semibold hover:outline hover:outline-red-700 hover:shadow-md hover:text-lg">Clear</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-span-2 lg:col-span-1  mx-auto my-8 md:mt-0" id="display-div">
+
+            </div>
+        </div>
+    </div>
+    <script src="assets/scripts.js"></script>
+</body>
+
+</html>
